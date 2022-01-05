@@ -41,11 +41,13 @@ struct APIService {
                 return
                 
             }
+             
             let decoder = JSONDecoder() 
             decoder.dateDecodingStrategy = dateDecodingStrategy
             decoder.keyDecodingStrategy = keyDecodingStrategy
             do {
                let decodedData =  try decoder.decode(T.self, from: data)
+            
                 completion(.success(decodedData))
             } catch {
                 completion(.failure(.decodingError))

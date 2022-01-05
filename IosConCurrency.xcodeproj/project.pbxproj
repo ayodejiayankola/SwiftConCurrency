@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5104EC142785BE340045DEDC /* UsersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5104EC132785BE340045DEDC /* UsersListViewModel.swift */; };
+		5104EC162785C9D50045DEDC /* Users.json in Resources */ = {isa = PBXBuildFile; fileRef = 5104EC152785C9D50045DEDC /* Users.json */; };
+		5104EC182785CA2B0045DEDC /* Posts.json in Resources */ = {isa = PBXBuildFile; fileRef = 5104EC172785CA2B0045DEDC /* Posts.json */; };
 		513839E12774F680000A5505 /* IosConCurrencyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513839E02774F680000A5505 /* IosConCurrencyApp.swift */; };
-		513839E32774F680000A5505 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513839E22774F680000A5505 /* ContentView.swift */; };
+		513839E32774F680000A5505 /* UsersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513839E22774F680000A5505 /* UsersListView.swift */; };
 		513839E52774F682000A5505 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 513839E42774F682000A5505 /* Assets.xcassets */; };
 		513839E82774F682000A5505 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 513839E72774F682000A5505 /* Preview Assets.xcassets */; };
 		513839F22774F682000A5505 /* IosConCurrencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513839F12774F682000A5505 /* IosConCurrencyTests.swift */; };
@@ -37,9 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5104EC132785BE340045DEDC /* UsersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListViewModel.swift; sourceTree = "<group>"; };
+		5104EC152785C9D50045DEDC /* Users.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Users.json; sourceTree = "<group>"; };
+		5104EC172785CA2B0045DEDC /* Posts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Posts.json; sourceTree = "<group>"; };
 		513839DD2774F680000A5505 /* IosConCurrency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IosConCurrency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		513839E02774F680000A5505 /* IosConCurrencyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IosConCurrencyApp.swift; sourceTree = "<group>"; };
-		513839E22774F680000A5505 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		513839E22774F680000A5505 /* UsersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListView.swift; sourceTree = "<group>"; };
 		513839E42774F682000A5505 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		513839E72774F682000A5505 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		513839ED2774F682000A5505 /* IosConCurrencyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IosConCurrencyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +84,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5104EC112785BDD00045DEDC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				513839E22774F680000A5505 /* UsersListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5104EC122785BE010045DEDC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5104EC132785BE340045DEDC /* UsersListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		513839D42774F680000A5505 = {
 			isa = PBXGroup;
 			children = (
@@ -102,10 +124,11 @@
 			isa = PBXGroup;
 			children = (
 				51383A0B2774F802000A5505 /* Models */,
+				5104EC122785BE010045DEDC /* ViewModels */,
+				5104EC112785BDD00045DEDC /* Views */,
 				51383A0A2774F71D000A5505 /* Info.plist */,
 				513839E02774F680000A5505 /* IosConCurrencyApp.swift */,
 				51BCCC1E2776274C004C3BB6 /* Services */,
-				513839E22774F680000A5505 /* ContentView.swift */,
 				513839E42774F682000A5505 /* Assets.xcassets */,
 				513839E62774F682000A5505 /* Preview Content */,
 			);
@@ -116,6 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				513839E72774F682000A5505 /* Preview Assets.xcassets */,
+				5104EC152785C9D50045DEDC /* Users.json */,
+				5104EC172785CA2B0045DEDC /* Posts.json */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -258,8 +283,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5104EC162785C9D50045DEDC /* Users.json in Resources */,
 				513839E82774F682000A5505 /* Preview Assets.xcassets in Resources */,
 				513839E52774F682000A5505 /* Assets.xcassets in Resources */,
+				5104EC182785CA2B0045DEDC /* Posts.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +311,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				513839E32774F680000A5505 /* ContentView.swift in Sources */,
+				513839E32774F680000A5505 /* UsersListView.swift in Sources */,
+				5104EC142785BE340045DEDC /* UsersListViewModel.swift in Sources */,
 				51BCCC2027762766004C3BB6 /* ApiService.swift in Sources */,
 				513839E12774F680000A5505 /* IosConCurrencyApp.swift in Sources */,
 				51383A0D2774F813000A5505 /* User.swift in Sources */,
